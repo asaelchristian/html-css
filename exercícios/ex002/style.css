@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.minha-conta > p::before{
+  content: "\f00c";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+.barra-pesquisa input{
+  padding: 50px;
+}
