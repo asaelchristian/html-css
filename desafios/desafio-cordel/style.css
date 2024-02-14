@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root{
+   --fonte-destaque: "Passion One", sans-serif;
+   --fonte-textos: "Sriracha", cursive;
+   --fonte-header-footer: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+h1{
+    font-family: var(--fonte-destaque);
+    font-weight: 700;
+    font-size: 8em;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+
+header{
+    background-color: black;
+    height: 270px;   
+}
+
+header p{
+    font-family: var(--fonte-header-footer);
+    color: white;
+    text-align: center;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+.txt-introdutório{
+    font-family: var(--fonte-textos);
+    font-size: 3em;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.joaninha{
+    height: 700px;
+    background-color: yellow;
+    margin-top: 120px;
+    background-image: url('imagens/background001.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.joaninha > p{
+    font-family: var(--fonte-textos);
+    font-size: 3em;
+    background-image: linear-gradient(to right, rgba(17, 16, 16, 0.798) 15%, transparent, rgba(17, 16, 16, 0.798));
+    left: 30px;
+    top: 50px;
+    color: white;
+    padding: 10px;
+    width: 580px;
+    position: absolute;
+    height: 615px;
+}
+
+.estrofe-3, .estrofe-4{
+    font-family: var(--fonte-textos);
+    font-size: 3em;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-bottom: 110px;
+}
+
+.papéis{
+    height: 700px;
+    background-color: yellow;
+    background-image: url('imagens/background002.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.papéis > p{
+    font-family: var(--fonte-textos);
+    font-size: 3em;
+    background-image: linear-gradient(to right,  rgba(17, 16, 16, 0.798) 15%, transparent, rgba(17, 16, 16, 0.798));
+    left: 30px;
+    top: 50px;
+    color: white;
+    padding: 10px;
+    width: 588px;
+    position: absolute;
+    height: 615px;
+}
+
+
