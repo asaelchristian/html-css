@@ -17,6 +17,16 @@
    --fonte-header-footer: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+section pre{
+    white-space: pre-line;
+    font-family: var(--fonte-textos);
+    line-height: 50px;
+    font-size: 3em;
+    margin-left: 30px;
+    margin-top: 80px;
+    margin-bottom: 130px;
+}
+
 
 h1{
     font-family: var(--fonte-destaque);
@@ -48,17 +58,9 @@ header a:hover{
     text-decoration: underline;
 }
 
-.txt-introdutório{
-    font-family: var(--fonte-textos);
-    font-size: 3em;
-    margin-top: 100px;
-    margin-left: 30px;
-}
-
 .joaninha{
     height: 700px;
     background-color: yellow;
-    margin-top: 120px;
     background-image: url('imagens/background001.jpg');
     background-position: center center;
     background-repeat: no-repeat;
@@ -67,7 +69,9 @@ header a:hover{
     position: relative;
 }
 
-.joaninha > p{
+.joaninha  pre{
+    white-space: pre-line;
+    line-height: 45px;
     font-family: var(--fonte-textos);
     font-size: 3em;
     background-image: linear-gradient(to right, rgba(17, 16, 16, 0.798) 15%, transparent, rgba(17, 16, 16, 0.798));
@@ -78,14 +82,6 @@ header a:hover{
     width: 580px;
     position: absolute;
     height: 615px;
-}
-
-.estrofe-3, .estrofe-4{
-    font-family: var(--fonte-textos);
-    font-size: 3em;
-    margin-top: 100px;
-    margin-left: 30px;
-    margin-bottom: 110px;
 }
 
 .papéis{
@@ -102,7 +98,7 @@ header a:hover{
 .papéis > p{
     font-family: var(--fonte-textos);
     font-size: 3em;
-    background-image: linear-gradient(to right,  rgba(17, 16, 16, 0.798) 15%, transparent, rgba(17, 16, 16, 0.798));
+    background-image: linear-gradient(to right,   rgba(17, 16, 16, 0.798) 15%, rgba(31, 30, 30, 0.798));
     left: 30px;
     top: 50px;
     color: white;
@@ -112,4 +108,32 @@ header a:hover{
     height: 615px;
 }
 
+.cordel, .moderno{
+   font-size: 90px;
+}
 
+footer{
+    background-color: black;
+    height: 40px;
+    position: relative;
+}
+
+.txt-footer{
+    color: white;
+    font-family: var(--fonte-header-footer);
+    font-size: 1.1em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
