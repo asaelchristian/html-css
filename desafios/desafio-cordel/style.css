@@ -17,14 +17,19 @@
    --fonte-header-footer: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+html, body{
+    min-height: 100vh;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
 section pre{
     white-space: pre-line;
-    font-family: var(--fonte-textos);
-    line-height: 50px;
-    font-size: 3em;
-    margin-left: 30px;
-    margin-top: 80px;
-    margin-bottom: 130px;
+    line-height: 2em;
+    padding-left: 30px;
 }
 
 
@@ -35,6 +40,7 @@ h1{
     text-align: center;
     padding-top: 50px;
     color: white;
+    font-variant: small-caps;
 }
 
 header{
@@ -58,74 +64,26 @@ header a:hover{
     text-decoration: underline;
 }
 
-.joaninha{
-    height: 700px;
-    background-color: yellow;
-    background-image: url('imagens/background001.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-}
-
-.joaninha  pre{
-    white-space: pre-line;
-    line-height: 45px;
-    font-family: var(--fonte-textos);
-    font-size: 3em;
-    background-image: linear-gradient(to right, rgba(17, 16, 16, 0.798) 15%, transparent, rgba(17, 16, 16, 0.798));
-    left: 30px;
-    top: 50px;
+.imagem{
+    background-color: rgb(51, 51, 51);
     color: white;
-    padding: 10px;
-    width: 580px;
-    position: absolute;
-    height: 615px;
 }
 
-.papéis{
-    height: 700px;
-    background-color: yellow;
-    background-image: url('imagens/background002.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-}
-
-.papéis > p{
-    font-family: var(--fonte-textos);
-    font-size: 3em;
-    background-image: linear-gradient(to right,   rgba(17, 16, 16, 0.798) 15%, rgba(31, 30, 30, 0.798));
-    left: 30px;
-    top: 50px;
-    color: white;
-    padding: 10px;
-    width: 588px;
-    position: absolute;
-    height: 615px;
-}
-
-.cordel, .moderno{
-   font-size: 90px;
+.imagem > div{
+    background-color: rgba(0, 0, 0, 0.253);
+    width: 400px;
 }
 
 footer{
-    background-color: black;
-    height: 40px;
-    position: relative;
+    background-color: black;   
 }
 
 .txt-footer{
     color: white;
     font-family: var(--fonte-header-footer);
     font-size: 1.1em;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
 }
 
 footer a{
