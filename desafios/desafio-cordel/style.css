@@ -28,30 +28,32 @@ section{
 
 section pre{
     white-space: pre-line;
-    line-height: 2em;
+    line-height: 1em;
     padding-left: 30px;
+    font-family: var(--fonte-textos);
+    font-size: 4vw;
+    margin-bottom: 2.5em;
 }
 
 
 h1{
     font-family: var(--fonte-destaque);
-    font-weight: 700;
-    font-size: 8em;
     text-align: center;
     padding-top: 50px;
     color: white;
     font-variant: small-caps;
+    font-size: 12vw;
 }
 
 header{
-    background-color: black;
-    height: 270px;   
+    background-color: black;  
 }
 
 header p{
     font-family: var(--fonte-header-footer);
     color: white;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 header a{
@@ -67,11 +69,31 @@ header a:hover{
 .imagem{
     background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.473);
 }
 
-.imagem > div{
-    background-color: rgba(0, 0, 0, 0.253);
-    width: 400px;
+.imagem pre{
+    background-color: rgba(0, 0, 0, 0.515);
+    display: inline-block;
+    margin-left: 15px;
+    padding: 10px;
+    text-shadow: 1px 1px 0px black;
+}
+
+#img001{
+    background-image: url('imagens/background001.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+#img002{
+    background-image: url('imagens/background002.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    background-attachment: fixed;
 }
 
 footer{
@@ -81,7 +103,6 @@ footer{
 .txt-footer{
     color: white;
     font-family: var(--fonte-header-footer);
-    font-size: 1.1em;
     padding: 10px;
     text-align: center;
 }
