@@ -20,6 +20,14 @@
             margin-top: 60px;
         }
 
+        caption{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background-color: rgb(217, 206, 192);
+            padding: 15px;
+        }
+
         th{
             background-color: #c4c6ca;
         }
@@ -32,6 +40,7 @@
         .hover-tbody:hover{
             background-color: darkturquoise;
             color: black;
+            cursor: pointer;
         }
 
         .position{
@@ -40,22 +49,29 @@
 
         .population{
            text-align: right;
+           width: 50px;
         }
 
         .IDH{
             text-align: center;
+            width: 50px;
+        }
+
+        tfoot:hover{
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <h1>População dos estados brasileiros e seus respctivos IDH's</h1>
+    <h1>Tabela Grande</h1>
      <table>
+        <caption>População dos estados brasileiros e seus respctivos IDH's</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População <small>(censo de 2022)</small></th>
-                <th>IDH <small>(em 2021)</small></th>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População <small>(censo de 2022)</small></th>
+                <th scope="col">IDH <small>(em 2021)</small></th>
             </tr>
         </thead>
 
@@ -224,7 +240,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes:</th>
+                <th scope="row">Total de Habitantes:</th>
                 <td>203 062 512</td>
             </tr>
         </tfoot>
