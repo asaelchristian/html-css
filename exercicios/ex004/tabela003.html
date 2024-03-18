@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de células</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            border: 2px solid black;
+            padding: 15px;
+            width: 450px;
+            font-weight: bold;
+            text-align: center;
+        }
+        caption{
+            background-color: lightslategrey;
+            text-align: center;
+            font-size: 2em;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Nomes Aleatórios</caption>
+        <tr>
+            <td>Asael</td>
+            <td>Arthur</td>
+            <td>João Victor</td>
+            <td rowspan="4">Carlos</td>
+        </tr>
+        <tr>
+            <td>Leandro</td>
+            <td>Monaliza</td>
+            <td>Paulo Victor</td>
+        </tr>
+        <tr>
+            <td>Nael</td>
+            <td>Vittorio</td>
+            <td>Natan</td>
+        </tr>
+        <tr>
+            <td colspan="3">Johnny</td>
+        </tr>
+    </table>
+</body>
+</html>
