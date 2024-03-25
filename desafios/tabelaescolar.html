@@ -11,43 +11,127 @@
 
         table{
             border-collapse: collapse;
+            margin: auto;
         }
 
         th, td{
             border: 1px solid black;
             padding: 10px;
+            width: 60px;
+            cursor: pointer;
+        }
+
+        th{
+            background-color: gray;
+            color: white;
+        }
+
+        .notas{
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .notas-baixas{
+            text-align: center;
+            color: red;
+            font-weight: bold;
+        }
+
+        caption{
+            font-weight: bold;
+            padding: 20px;
+            border-radius: 15px 15px 0px 0px;
+            background-color: bisque;
+        }
+
+        .nota-média{
+            text-align: center;
+            background-color: gray;
+            color: white;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
+    
     <table>
+        <caption>Notas das provas do 1º bimestre do aluno Carlos Madeira de Sousa</caption>
         <thead>
             <tr>
-                <th>Área</th>
-                <th>Disciplinas</th>
-                <th>Notas</th>
-                <th>Média</th>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
             </tr>
-            <tr>
-                <th>Exatas</th>
-                <th>Bimestral</th>
-                <th>Parcial</th>
-            </tr>
+        <tr>
+            <th scope="col">Parcial</th>
+            <th scope="col">Bimestral</th>
+        </tr>
         </thead>
 
 
         <tbody>
             <tr>
-                <td>Matemática</td>
+                <th rowspan="5" scope="rowgroup">Exatas</th>
+                <tr>
+                    <td>Matemática</td>
+                    <td class="notas">10,0</td>
+                    <td class="notas">8,5</td>
+                    <td class="notas">9,2</td>
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td class="notas-baixas">4,0</td>
+                    <td class="notas-baixas">6,0</td>
+                    <td class="notas-baixas">5,0</td>
+                </tr>
+                <tr>
+                    <td>Química</td>
+                    <td class="notas">9,5</td>
+                    <td class="notas">8,0</td>
+                    <td class="notas">8,7</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td class="notas">7,0</td>
+                    <td class="notas">10,0</td>
+                    <td class="notas">8,5</td>
+                </tr>
             </tr>
             <tr>
-                <td>Física</td>
+                <th colspan="4" scope="row">Média de Exatas</th>
+                <td class="nota-média">7,8</td>
             </tr>
             <tr>
-                <td>Química</td>
-            </tr>
-            <tr>
-                <td>Biologia</td>
+                <th rowspan="5" scope="rowgroup">Humanas</th>
+                    <tr>
+                        <td>História</td>
+                        <td class="notas">10,0</td>
+                        <td class="notas">10,0</td>
+                        <td class="notas">10,0</td>
+                    </tr>
+                    <tr>
+                        <td>Geografia</td>
+                        <td class="notas">10,0</td>
+                        <td class="notas">10,0</td>
+                        <td class="notas">10,0</td>
+                    </tr>
+                    <tr>
+                        <td>Filosofia</td>
+                        <td class="notas-baixas">6,5</td>
+                        <td class="notas">7,5</td>
+                        <td class="notas">7,0</td>
+                    </tr>
+                    <tr>
+                        <td>Sociologia</td>
+                        <td class="notas">8,0</td>
+                        <td class="notas">8,0</td>
+                        <td class="notas">8,0</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4" scope="row">Média de Humanas</th>
+                        <td class="nota-média">8,7</td>
+                    </tr>
             </tr>
         </tbody>
     </table>
