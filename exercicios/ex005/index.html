@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <script src="https://kit.fontawesome.com/95a0bc5b81.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens-tine-loja/Marca_Tine_CMYK_11-Símbolo_Rosa.png" type="image/x-icon">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--CSS do projeto-->
+    <link rel="stylesheet" href="style.css">
+    <title>Tine Loja | Viva uma aventura</title>
+
+
+</head>
+<body>
+
+  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle whatsapp-icon">
+    <button class="btn py-2  d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (dark)">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path>
+      </svg>
+
+    </button>
+
+</div>
+
+
+  
+
+  <header class="navbar navbar-expand-lg bg-body-tertiary sticky-top" style="padding: 0px;">
+    <div class="container-fluid">
+     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <img src="imagens-tine-loja/logo-tine-loja.png" alt="logo">
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <nav>
+          <div class="offcanvas-body align-items-center">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <!--Dropdown NOVIDADES-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Novidades
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Última Coleção</a></li>
+                </ul>
+              </li>
+              <!--Dropdown ROUPAS-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Roupas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Vestidos</a></li>
+                    <hr class="dropdown-divider">
+                  <li><a class="dropdown-item" href="#">Polos</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Praia</a></li>
+                    <hr class="dropdown-divider">
+                  <li><a class="dropdown-item" href="#">Calcinhas</a></li>
+                </ul>
+              </li>
+              <!--Dropdown ACESSÓRIOS-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Acessórios
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Bonés</a></li>
+                    <hr class="dropdown-divider">
+                  <li><a class="dropdown-item" href="#">Mochilas e Bolsas</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Perfumes</a></li>
+                </ul>
+              </li>
+              
+              
+              <!--OFERTAS-->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: #EF0000;">Ofertas</a>
+              </li>
+
+
+              <!--Minha Conta-->
+              <li class="nav-item conta">
+                <a href="login.html" target="_self" rel="next">
+                  <p>
+                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16" style="margin-bottom: 4px;">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"></path>
+                    </svg> Minha Conta
+                  </p>
+                </a>
+              </li>
+            </ul>
+            <form class="d-flex align-self-center" role="search">
+              <input class="form-control me-2" type="search" placeholder="O que você gostaria?" aria-label="Search">
+              <button class="btn" type="submit">Buscar</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  
+   <!--Carrossel de Imagens-->
+   <section>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagens-tine-loja/post-main1.png" class="d-block w-100" alt="Conjuntos">
+        </div>
+        <div class="carousel-item">
+          <img src="imagens-tine-loja/Coleção Crescer.png" class="d-block w-100" alt="Coleção Crescer">
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+
+
+<!--Mensagens iniciais-->
+<!--Primeira Troca Grátis-->
+<main class="container">
+  <section>
+    <div class="row">
+      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6" style="padding: 0px;">
+        <div class="card" style="width: 250px;">
+          <div class="card-body">
+            <div class="fs-4 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"></path>
+            <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"></path>
+            </svg>
+              <span class="span-inicial-1">PRIMEIRA TROCA GRÁTIS</span>
+              <pre><span class="span-final-1">Compre com segurança</span></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+      <!--Até 6X sem juros-->
+      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6" style="padding: 0px;">
+        <div class="card" style="width: 220px;">
+          <div class="card-body">
+            <div class="fs-4 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-credit-card-2-front-fill" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm0 3a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z"></path>
+            </svg>
+            <span class="span-inicial-2">ATÉ 6X SEM JUROS</span>
+            <pre><span class="span-final-2">No cartão de crédito</span></pre>
+          </div>
+        </div>
+        </div>
+      </div>
+  
+  
+      <!--Entrega Grátis para Brasil-->
+      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6" style="padding: 0px;">
+        <div class="card" style="width: 250px;">
+          <div class="card-body">
+            <div class="fs-4 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+            <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"></path>
+            </svg>
+            <span class="span-inicial-3">FRETE GRÁTIS PARA BRASIL</span>
+            <pre><span class="span-final-3">A partir de R$ 399,00</span></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+      <!--FRETE GRÁTIS FORTALEZA E REGIÃO METROPOLITANA-->
+      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-6" style="padding: 0px;">
+        <div class="card" style="width: 250px;">
+          <div class="card-body">
+            <div class="fs-4 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-bicycle" viewBox="0 0 16 16">
+            <path d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5m1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139zM8 9.057 9.598 6.5H6.402zM4.937 9.5a2 2 0 0 0-.487-.877l-.548.877zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53z"></path>
+            </svg>
+            <span class="span-inicial-4">FRETE GRÁTIS FORTALEZA E REGIÃO METROPOLITANA</span>
+            <pre><span class="span-final-4">A partir de R$ 199,00</span></pre>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+  </section>
+
+
+  <!--Seção das 4 grandes imagens-->
+
+  <!--Imagem-hover 1-->
+  <section class="row d-flex justify-content-center">
+    <div class="card col-sm-6">
+        <img src="imagens-tine-loja/tine-vestidos-centralizado.jpeg" class="card-img img-zoom" alt="Vestidos" style="height: 244px;">
+    </div>
+      <!--Imagem-hover 2-->
+      <div class="card">
+        <img src="imagens-tine-loja/shorts-tine.jpg" class="card-img img-zoom" alt="Shorts" style="height: 243px;">
+      </div>
+      <!--Imagem-hover 3-->
+      <div class="card">
+        <img src="imagens-tine-loja/polos-tine-loja.jpg" class="card-img img-zoom" alt="Pólos" style="height: 244px;">
+      </div>
+  </section>
+
+
+  
+  <h1>Novidades</h1>
+  <!--Imagens de vestidos-->
+
+  <!--Imagem 1-->
+  <article class="row d-flex justify-content-center">
+    <div class="card col-md-3 mb-4 card-bi" style="width: 225px;">
+      <div class="tc-container">
+        <img src="imagens-tine-loja/tine-amostrada-2.jpg" class="card-img-top" alt="Cristine com pose amostrada" style="height: 268px;">
+        <img src="imagens-tine-loja/tine-amostrada-1.jpg" alt="Cristine com pose amostrada" style="height: 268px;">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">VESTIDO TRADICIONAL AMARELO</h5>
+        <p class="card-text"><del>R$ 150,00</del> &rarr; <strong>R$ 104,10</strong> <br> <span>ou 6x de R$ 25,00 sem juros</span></p>
+        <a href="check-compra.html" target="_self" rel="next" class="btn">Comprar</a>
+      </div>
+    </div>
+    <!--Imagem 2-->
+    <div class="card col-md-3 mb-4 card-bi" style="width: 225px;">
+      <div class="tc-container">
+        <img src="imagens-tine-loja/cristine-pose-branca.jpg" class="card-img-top" alt="Cristine com vestido branco de panda">
+        <img src="imagens-tine-loja/cristine-branca.jpg" alt="Cristine com vestido branco de panda">
+      </div>
+      <div class="card-body body-card">
+        <h5 class="card-title">VESTIDO BRANCO DE PANDA</h5>
+        <p class="card-text"><strong class="strong-meio">R$ 165,00</strong> <br> <span>ou 6x de R$ 27,50 sem juros</span></p>
+        <a href="check-compra.html" target="_self" rel="next" class="btn">Comprar</a>
+      </div>
+    </div>
+    <!--Imagem 3-->
+    <div class="card col-md-3 mb-4 card-bi" style="width: 225px;">
+      <div class="tc-container">
+        <img src="imagens-tine-loja/meninas-pose-meia-volta.jpg" class="card-img-top" alt="Cristine com uma amiga fazendo poses" style="height: 268px;">
+        <img src="imagens-tine-loja/meninas-pose-normal.jpg" alt="Cristine com uma amiga fazendo poses" style="height: 268px;">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">VESTIDO LISTRADO XADREZ</h5>
+        <p class="card-text"><del>R$ 180,00</del> &rarr; <strong>R$ 96,00</strong> <br> <span>ou 6x de R$ 16,00 sem juros</span></p>
+        <a href="check-compra.html" target="_self" rel="next" class="btn">Comprar</a>
+      </div>
+    </div>
+    <!--Imagem 4-->
+    <div class="card col-md-3 mb-4 card-bi" style="width: 225px;">
+      <div class="tc-container">
+        <img src="imagens-tine-loja/cristine-panda-planta.jpg" class="card-img-top" alt="Cristine com pose amostrada">
+        <img src="imagens-tine-loja/cristine-panda.jpg" alt="Cristine com pose amostrada">
+      </div>
+      <div class="card-body body-card">
+        <h5 class="card-title">VESTIDO DE PANDAS PRETO E BRANCO</h5>
+        <p class="card-text"><strong class="strong-meio">R$ 80,00</strong> <br> <span>ou 4x de R$ 20,00 sem juros</span></p>
+        <a href="check-compra.html" target="_self" rel="next" class="btn">Comprar</a>
+      </div>
+    </div>
+  </article>
+   
+
+  
+  
+  <!--Sustentabilidade e Inovação-->
+  <section class="container d-flex justify-content-center text-center">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <img class="img-zoom" src="imagens-tine-loja/sustentabilidade-compromisso.jpg" alt="Sustentabilidade" style="height: 157px;">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <img class="img-zoom" src="imagens-tine-loja/heloisa-tine-inovacao.JPG" alt="Inovação">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<h1>Mais Vendidos</h1>
+  <!--Imagens de vestidos-->
+
+  <!--Imagem 1-->
+  <article class="row d-flex justify-content-center">
+    <div class="card col-md-3 mb-4 card-bi" style="width: 225px;">
+      <div class="tc-container">
+        <img src="imagens-tine-loja/tine-vestido-roxo-pose.jpg" class="card-img-top" alt="Cristine com vestido roxo">
+        <img src="imagens-tine-loja/tine-vestido-roxo-normal.jpg" alt="Cristine com vestido roxo" style="height: 268px;">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">VESTIDO COM BOLINHAS - ROXO</h5>
+        <p class="card-text"><strong class="strong-meio-vr">R$ 100, 00</strong> <br> <span>ou 5x de R$ 20,00 sem juros</span></p>
+        <a href="check-compra.html" target="_self" rel="next" class="btn">Comprar</a>
+      </div>
+    </div>
+    <!--Imagem 2-->
+    <div class="card col-md-3 mb-4 card-bi" style="width: 225px;">
+      <div class="tc-container">
+        <img src="imagens-tine-loja/tine-vestido-vermelho-pose (2).jpg" class="card-img-top" alt="Cristine com vestido branco de panda">
+        <img src="imagens-tine-loja/tine-vestido-vermelho-normal (2).jpg" alt="Cristine com vestido branco de panda">
+      </div>
+      <div class="card-body body-card">
+        <h5 class="card-title">VESTIDO HALF-SHIRT VERMELHO</h5>
+        <p class="card-text"><del>R$ 300,00</del> &rarr; <strong>R$ 150,00</strong> <br> <span>ou 6x de R$ 25,00 sem juros</span></p>
+        <a href="check-compra.html" target="_self" rel="next" class="btn">Comprar</a>
+      </div>
+    </div>
+    <!--Imagem 3-->
+    <div class="card col-md-3 mb-4 card-bi" style="width: 225px;">
+      <div class="tc-container">
+        <img src="imagens-tine-loja/tine-vestido-azul-pose.jpg" class="card-img-top" alt="Cristine com uma amiga fazendo poses" style="height: 268px;">
+        <img src="imagens-tine-loja/tine-vestido-azul-normal.jpg" alt="Cristine com uma amiga fazendo poses" style="height: 268px;">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">VESTIDO COM BOLINHAS - AZUL</h5>
+        <p class="card-text"><strong class="strong-meio-vr">R$ 100,00</strong> <br> <span>ou 6x de R$ 16,00 sem juros</span></p>
+        <a href="check-compra.html" target="_self" rel="next" class="btn">Comprar</a>
+      </div>
+    </div>
+    <!--Imagem 4-->
+    <div class="card col-md-3 mb-4 card-bi" style="width: 225px;">
+      <div class="tc-container">
+        <img src="imagens-tine-loja/tine-vestido-verde-pose (2).jpg" class="card-img-top" alt="Cristine com pose amostrada">
+        <img src="imagens-tine-loja/tine-vestido-verde-normal (2).jpg" alt="Cristine com pose amostrada">
+      </div>
+      <div class="card-body body-card">
+        <h5 class="card-title">VESTIDO HALF-SHIRT VERDE</h5>
+        <p class="card-text"><strong class="strong-meio-vv">R$ 290,00</strong> <br> <span>ou 5x de R$ 58,00 sem juros</span></p>
+        <a href="check-compra.html" target="_self" rel="next" class="btn">Comprar</a>
+      </div>
+    </div>
+  </article>
+  
+
+  <!--Login para lista VIP-->
+  <section>
+    <div class="col-md-10 mx-auto col-lg-5">
+      <form class="p-4 p-md-5 border rounded-3 shadow p-3 mb-5 rounded">
+        <h1 class="lista-vip">Cadastre-se em nossa lista VIP</h1>
+        <p class="form-p">Fique por dentro de tudo que acontece e receba <span class="ofertas-exclusivas">ofertas exclusivas!</span></p>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">E-mail</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Senha</label>
+        </div>
+        <button class="w-100 btn btn-lg" type="submit">Cadastrar</button>
+        <hr class="my-4">
+        <small class="text-body-secondary">Clicando em cadastrar, você concorda com os <a class="special-link" href="#">termos de uso</a>.</small>
+      </form>
+    </div>
+  </section>
+
+  
+  
+  <!--Carrossel final-->
+  <aside>
+    <h1 class="siga-nos">Siga-nos no instagram</h1>
+    <p class="instagram">@tineloja</p>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagens-tine-loja-fotos-finais/desconto-peças-50.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imagens-tine-loja-fotos-finais/verão-aventura.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="imagens-tine-loja-fotos-finais/linha-all-basic.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </aside>
+</main>
+
+  <!--Rodapé-->
+    <div class="container footer">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+        <div class="col mb-3 p-0">
+          <a href="/" class="d-flex  align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <img src="imagens-tine-loja/logo-tine-loja-footer.png" alt="logo">
+          </a>
+          <p class="p-footer">Desde 2021 nossas roupas reúnem estilo, conforto e sustentabilidade. Dê o que há de melhor para sua filha!</p>
+          <!--Facebook icon-->
+          <button type="button" class="btn facebook-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+            </svg>
+          </button>
+
+          <!--Instagram Icon-->
+          <button type="button" class="btn instagram-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+            </svg>
+          </button>
+
+          <!--Twitter-->
+          <button type="button" class="btn twitter-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"></path>
+            </svg>
+          </button>
+        </div>
+    
+        <div class="col mb-3">
+    
+        </div>
+    
+        <div class="col mb-3 p-0">
+          <h5 class="h5-footer">Minha Conta</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Minha Conta</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Meus Pedidos</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Meu carrinho</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3 p-0">
+          <h5 class="h5-footer">Ajuda e Suporte</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Política de Entrega</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Segurança e Privacidade</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Trocas e Devoluções</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Denúncias</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3 p-0">
+          <h5 class="h5-footer">Contato</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">lojaon@tine.com.br</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">(85) 8372-8382</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Fale Conosco</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Atendimento: Segenda à Sábado, de 9h às 18h</a></li>
+          </ul>
+        </div>
+      </footer>
+      <div class="d-flex justify-content-center">
+        <p>Keuly e Miza Indústrias e Comércio de Confecções LTDA - 97.494.436.865/9371-19</p>
+      </div>
+    </div>
+
+    <div class="mensagem-final">
+      <p>Desenvolvido por <a href="https://github.com/asaelchristian" target="_blank" rel="external" hreflang="en">Asael Christian</a></p>
+    </div>
+
+
+
+<!--Bootstrap JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
