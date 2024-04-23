@@ -4,14 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #button{
+            cursor: pointer;
+        }
+        a:hover{
+            color: chartreuse;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <h1>Cadastro biométrico</h1>
     <form action="cadastro.php" method="get">
         <p>
             <input type="text" name="nome">
-            <input type="submit" value="Cadastrar">
+            <input type="submit" value="Cadastrar" id="button">
         </p>
     </form>
+    <br>
+    <a href="#" onclick="deletado()">Deletar</a>
+    <div id="saida"></div>
+    
+    <script>
+        function deletado() {
+            s = window.document.getElementById("saida")
+            s.innerHTML += '<p>deletado</p>'
+        }
+    </script>
 </body>
 </html>
