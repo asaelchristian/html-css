@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        #submit{
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 6px;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+
+        #submit:hover{
+            background-color: aliceblue;
+            color: black;
+            transition-duration: 0.6s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <br>
+    <br>
+    <form>
+        <p>Nome: <input type="text" name="nome" id="nome"></p>
+        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+        <input id="submit" type="submit" value="Enviar">
+    </form>
+</body>
+</html>
