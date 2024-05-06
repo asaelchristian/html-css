@@ -14,6 +14,18 @@
     <h1>Cadastro do  Bradesco</h1>
     <form action="cadastro.php" method="post">
         
+        <p>
+            <label for="iuser">Usuário:</label>
+            <input type="text" name="user" id="iuser" placeholder="ex: João" required size="20" maxlength="90">
+        </p>
+
+        <p>
+            <label for="ipassword">Senha:</label>
+            <input type="password" name="password" id="ipassword" minlength="8" maxlength="20" required size="10">
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Deletar">
     </form>
 </body>
 </html>
