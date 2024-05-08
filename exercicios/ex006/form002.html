@@ -12,16 +12,16 @@
 </head>
 <body>
     <h1>Cadastro do  Bradesco</h1>
-    <form action="cadastro.php" method="post">
+    <form action="cadastro.php" method="post" autocomplete="on">
         
         <p>
             <label for="iuser">Usuário:</label>
-            <input type="text" name="user" id="iuser" placeholder="ex: João" required size="20" maxlength="90">
+            <input type="text" name="user" id="iuser" required size="70" maxlength="90" placeholder="ex: Carlos Madeira de Sousa" autocomplete="username">
         </p>
 
         <p>
             <label for="ipassword">Senha:</label>
-            <input type="password" name="password" id="ipassword" minlength="8" maxlength="20" required size="10">
+            <input type="password" name="password" id="ipassword" minlength="8" maxlength="20" required size="10" autocomplete="current-password">
         </p>
 
         <input type="submit" value="Enviar">
