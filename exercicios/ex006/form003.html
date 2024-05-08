@@ -3,17 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acesso Boletim CQB</title>
+    <title>Avaliação de produto</title>
     <style>
         body{
            font-family: Arial, Helvetica, sans-serif;
         }
+
+        div{
+            margin-bottom: 20px;
+        }
+
+        input{
+            font-family: Arial, Helvetica, sans-serif;
+        }
     </style>
 </head>
 <body>
-    <h1>Acesso ao boletim do segundo bimestre 2024</h1>
-    <form action="cadastrado.php" method="get">
+    <h1>Avaliação do cliente sobre o novo shampoo</h1>
+    <form action="cadastrado.php" method="get" autocomplete="on">
         
+        <div>
+            <label for="inome">Nome completo do cliente:</label>
+            <input type="text" name="nome" id="inome" autocomplete="name" maxlength="35" required size="50" value="Nael Gameplays">
+        </div>
+
+        <div>
+            <label for="imedia">Nota pessoal ao produto:</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="De 0 a 10" step="0.1" required>
+        </div>
+
+        <div>
+            <label for="imes">Período da primeira compra do shampoo:</label>
+            <input type="month" name="mes" id="imes" value="2009-09" required>
+        </div>
+
+        <div>
+            <label for="idia">Última vez que comprou o shampoo:</label>
+            <input type="date" name="dia" id="idia" required>
+        </div>
+
+        <div>
+            <label for="ihora">Que horas você costuma tomar banho?</label>
+            <input type="time" name="hora" id="ihora" required>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Deletar dados">
+        </div>
     </form>
 </body>
 </html>
