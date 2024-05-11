@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados pessoais</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+         
+        .input{
+            margin-top: 3px;
+        }
+
+        fieldset{
+            border: 3px outset black;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.291);
+        }
+
+        legend{
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        #itel{
+            outline: 0px;
+        }
+
+        #itel:valid{
+            border-color: green;
+        }
+
+        #itel:focus:invalid{
+           border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            
+            <!--Nome-->
+            <div>
+                <label for="inome">Nome Completo:</label>
+        
+                <div class="input">
+                    <input type="text" name="nome" id="inome" autocomplete="name" minlength="15" maxlength="40" required>
+                </p>
+            </div>
+            
+            <br>
+           
+            <!--E-mail-->
+           <div>
+               <label for="iemail">E-mail:</label>
+
+               <div class="input">
+                   <input type="email" name="email" id="iemail" minlength="10" maxlength="25" autocomplete="email" required>
+               </div>
+           </div>
+            
+           
+            <br>
+            <br>
+           
+            <!--Telefone-->
+           <div>
+             <label for="itel">Número de Telefone:</label>
+
+              <div class="input">
+                <input type="tel" name="tel" id="itel" autocomplete="tel-national" placeholder="+55 (xx) xxxx-xxxx" pattern="\+\d{2} \(\d{2}\) \d{4}-\d{4}" title="Deve conter o DDD nacional e regional. Além de 8 números." required>
+              </div>
+            </div>
+
+            <br>
+
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
