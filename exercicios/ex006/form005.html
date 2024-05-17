@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varourite HCR2</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    abbr[title] {
+       text-decoration: none;
+    }
+
+    legend{
+        text-decoration: underline;
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>What's your favourite <abbr title="Hill Climb Racing 2">HCR2</abbr> youtuber?</legend>
+            <input type="radio" name="yt" id="iveres" checked value="Vereschack"> 
+            <label for="iveres">Vereschack</label>
+            <br>
+            <br>
+            <input type="radio" name="yt" id="iio" value="IO & OI"> 
+            <label for="iio">IO & OI</label>
+            <br>
+            <br>
+            <input type="radio" name="yt" id="ilinus" value="Linus"> 
+            <label for="ilinus">Linus</label>
+            <br>
+            <br>
+            <input type="radio" name="yt" id="isameer" value="Sameer"> 
+            <label for="isameer">Sameer</label>
+            <br>
+            <br>
+            <input type="radio" name="yt" id="iprotect" value="Protect"> 
+            <label for="iprotect">Protect</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>What is the fastest vehicle in <abbr title="Hill Climb Racing 2">HCR2</abbr> according to your opinion?</legend>
+            <input type="checkbox" name="rtruck" id="irtruck" value="Racing Truck" checked> <label for="irtruck">Racing Truck</label>
+            <br>
+            <br>
+            <input type="checkbox" name="sbike" id="isbike" value="Super Bike"> <label for="isbike">Super Bike</label>
+            <br>
+            <br>
+            <input type="checkbox" name="scar" id="iscar" value="Super Car"> <label for="iscar">Super Car</label>
+            <br>
+            <br>
+            <input type="checkbox" name="formula" id="iformula" value="Formula"> <label for="iformula">Formula</label>
+            <br>
+            <br>
+            <input type="checkbox" name="sdiesel" id="isdiesel" value="Super Diesel"> <label for="isdiesel">Super Diesel</label>
+        </fieldset>
+        <br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Delete">
+    </form>
+</body>
+</html>
