@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best youtuber</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        textarea{
+            resize: none;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="ibestyt">What's your favourite youtuber of HCR2?</label>
+            <select name="bestyt" id="ibestyt" required>
+                <option disabled selected>Pick One...</option>
+                <optgroup label="German Youtubers">
+                    <option  value="LN">Linus</option>
+                    <option value="DR">Drackon</option>
+                    <option value="ZR">Zorro</option>
+                    <option value="DF">Deflorator</option>
+                    <option value="JP">Jumpi</option>
+                </optgroup>
+                <optgroup label="American Youtubers">
+                    <option value="VR">Vereschack</option>
+                    <option value="PR">Protect</option>
+                    <option value="VN">Vince</option>
+                    <option value="IO">IO & OI</option>
+                    <option value="DP">Dangs Peng</option>
+                </optgroup>
+                <optgroup label="Brazilian Youtubers">
+                    <option value="VT">Vittorio</option>
+                    <option value="AS">Asael HCR2</option>
+                    <option value="CL">Carlos HCR2</option>
+                    <option value="TR">Teórian HCR2</option>
+                    <option value="MS">M4STER</option>
+                </optgroup>
+                <optgroup label="Other Countries">
+                    <option value="FX">FOX</option>
+                    <option value="RR">RR</option>
+                    <option value="SM">Sameer</option>
+                    <option value="CP">Captain</option>
+                    <option value="TL">Tesla</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="ifavplr">What's your favourite HCR2 player?</label>
+            <input type="text" name="favplr" id="ifavplr" list="players" required>
+            <datalist id="players">
+                     <option>Linus</option>
+                     <option>Drackon</option>
+                     <option>Deflorator</option>
+                     <option value="Zorro">
+                     <option value="Jumpi">
+                     <option value="Vereschack">
+                     <option value="Vince">
+                     <option value="Protect">
+                     <option value="Dangs Peng">
+                     <option value="IO & OI">
+                     <option value="Vittorio">
+                     <option value="M4STER">
+                     <option value="AsaelCJL YT">
+                     <option value="Teórian">
+                     <option value="Carlos">
+            </datalist>
+        </p>
+
+        <p class="container">
+            <label for="iopinion">What is your opinion about your favourite player?</label>
+            <br>
+            <textarea name="opinion" id="iopinion" rows="15" placeholder="Set your text here.." required></textarea>
+        </p>
+
+         <br>
+         <br>
+         <br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Delete data">
+    </form>
+</body>
+</html>
