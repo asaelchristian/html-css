@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+html{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+menu{
+    display: none;
+}
+
+main{
+    line-height: 30px;
+}
+
+main::after{
+    content: 'Made by: Asael Christian';
+}
