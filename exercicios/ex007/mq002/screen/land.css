@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/*When the device is laid down*/
+
+body{
+    background-image: url('../imagens001/cev-landscape.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+}
