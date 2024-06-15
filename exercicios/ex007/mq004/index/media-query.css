@@ -1,1 +1,98 @@
 @charset "UTF-8";
+
+
+/* small tablets */
+@media screen and (min-width: 568px) and (max-width: 768px){
+    body{
+        background-image: url('imagens/icon-tablet.png');
+    }
+}
+
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: url('imagens/back-tablet.jpg');
+    }
+
+    #tablet{
+        display: block;
+        margin: auto;
+    }
+
+    main{
+        padding: 20px;
+        max-width: 450px;
+    }
+    
+    #phone{display: none}
+    #tablet{display: block;}
+    #printer{display: none;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+/* Laptops and computers in general*/
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body{
+        background-image: url('imagens/back-pc.jpg');
+    }
+
+
+    #pc{
+        display: block;
+        margin: auto;
+    }
+
+    main{
+        padding: 20px;
+        max-width: 450px;
+    }
+    
+    #phone{display: none}
+    #tablet{display: none;}
+    #printer{display: none;}
+    #pc{display: block;}
+    #tv{display: none;}
+}
+
+/* TV's and big computers/laptops */
+@media screen and (min-width: 1200px){
+    body{
+        background-image: url('imagens/back-tv.jpg');
+    }
+
+
+    #tv{
+        display: block;
+        margin: auto;
+    }
+
+    main{
+        padding: 20px;
+        max-width: 800px;
+    }
+    
+    #phone{display: none}
+    #tablet{display: none;}
+    #printer{display: none;}
+    #pc{display: none;}
+    #tv{display: block;}
+}
+
+@media print{
+    h1{
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        text-shadow: none;
+    }
+
+    main{
+        box-shadow: none;
+        border: 3px solid black;
+    }
+
+    body::after{
+        content: 'Made by: Asael Chriistian.';
+    }
+}
