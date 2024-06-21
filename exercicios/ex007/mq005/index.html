@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Who is Rocky Balboa? - Tesla</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
     <link rel="stylesheet" href="phone.css" media="all">
 </head>
 <body>
@@ -11,7 +12,9 @@
         <div id="tesla">
             <img src="tesla.jpg" alt="Tesla logo">
         </div>
-        <nav>
+        <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <span id="x" class="material-symbols-outlined" onclick="clickMenu()">close</span>
+        <nav id="items">
             <ul>
                 <li><a href="#">Home</a></a></li>
                 <li><a href="#">Main News</a></li>
@@ -39,5 +42,20 @@
             <p id="last-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, magnam ab, ex dolore temporibus beatae voluptatem quod, itaque exercitationem distinctio mollitia earum? Nulla modi officia atque eaque, voluptatibus rerum dolorum totam pariatur ex! Asperiores provident fugiat obcaecati quaerat neque nemo velit sed at. Quis perspiciatis consectetur necessitatibus saepe optio, commodi libero illo maiores sunt hic fugit totam suscipit explicabo ea.</p>
         </article>
     </main>
+    <script>
+         function clickMenu(){
+            if (items.style.display == 'none'){
+                items.style.display = 'block'
+                menu.style.display = 'none'
+                x.style.display = 'block'
+            }
+            else{ /* items.style.display == 'block' */ 
+                items.style.display = 'none'
+                x.style.display = 'none'
+                menu.style.display = 'block'
+            }
+         }
+         
+    </script>
 </body>
 </html>

@@ -14,11 +14,26 @@
     padding-bottom: 10px;
     padding-top: 10px;
 }
+#x{
+    display: none;
+}
+
+.material-symbols-outlined{
+    background-color: gray;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.material-symbols-outlined:hover{
+    background-color: thistle;
+}
 
 nav{
     background-color: rgb(206, 198, 198);
-    border: 1px solid black;
+    border: 1px solid rgb(206, 198, 198);
     text-align: center;
+    display: none;
 }
 
 a{
@@ -47,7 +62,6 @@ h1{
 main{
    background-color: rgb(225, 218, 209); 
    padding: 10px;
-   text-indent: 50px;
    text-align: justify;
 }
 
@@ -60,6 +74,7 @@ main{
 p{
     line-height: 28px;
     padding-bottom: 45px;
+    text-indent: 50px;
 }
 
 #paragraph-separated{
