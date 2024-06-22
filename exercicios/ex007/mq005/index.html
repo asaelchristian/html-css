@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Who is Rocky Balboa? - Tesla</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
-    <link rel="stylesheet" href="phone.css" media="all">
+    <link rel="stylesheet" href="phone.css">
 </head>
 <body>
     <header>
         <div id="tesla">
-            <img src="tesla.jpg" alt="Tesla logo">
+            <img id="big-logo" src="tesla-improved.jpeg" alt="Tesla logo">
+            <img id="small-logo" src="tesla.jpg" alt="Tesla logo">
         </div>
         <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <span id="x" class="material-symbols-outlined" onclick="clickMenu()">close</span>
@@ -45,14 +46,14 @@
     <script>
          function clickMenu(){
             if (items.style.display == 'none'){
-                items.style.display = 'block'
-                menu.style.display = 'none'
-                x.style.display = 'block'
+                items.style.display = 'block';
+                menu.style.display = 'none';
+                x.style.display = 'block';
             }
             else{ /* items.style.display == 'block' */ 
-                items.style.display = 'none'
-                x.style.display = 'none'
-                menu.style.display = 'block'
+                items.style.display = 'none';
+                x.style.display = 'none';
+                menu.style.display = 'block';
             }
          }
          
