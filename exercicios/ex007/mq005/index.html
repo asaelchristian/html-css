@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Who is Rocky Balboa? - Tesla</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
-    <link rel="stylesheet" href="phone.css">
+    <link rel="stylesheet" href="phone.css" media="all">
+    <link rel="stylesheet" href="devices.css" media="screen and (min-width: 768px)">
 </head>
-<body>
+<body onresize="changedSize()">
     <header>
         <div id="tesla">
             <img id="big-logo" src="tesla-improved.jpeg" alt="Tesla logo">
@@ -44,6 +45,17 @@
         </article>
     </main>
     <script>
+         function changedSize(){
+            if(window.innerWidth >= 768){
+                items.style.display = 'flex';
+                menu.style.display = 'none';
+            }
+            else{
+                items.style.display = 'none';
+                menu.style.display = 'block';
+            }
+         }
+
          function clickMenu(){
             if (items.style.display == 'none'){
                 items.style.display = 'block';

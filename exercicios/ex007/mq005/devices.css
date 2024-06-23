@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+#big-logo{
+    display: block;
+}
+
+#small-logo{
+    display: none;
+}
+
+#menu, #x{
+    display: none;
+}
+
+#items{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#items > ul > li{
+    display: inline-block;
+    padding: 12px;
+    margin: 0px 10px 0px 10px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+#items > ul > li:hover{
+    background-color: #bdb3b3;
+    transition: 0.6s;
+}
+
+main{
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 10px;
+}
