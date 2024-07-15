@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible boxes</title>
+    <style>
+        #container{
+            background-color: rgb(0, 191, 255);
+            padding: 10px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .item{
+           background-color: black;
+           text-align: center;
+           border: 1px solid rebeccapurple;
+           flex: auto;
+           padding: 8px;
+           color: white;
+           font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item">Linha de conteúdo A</div>
+        <div class="item">Linha de conteúdo B</div>
+        <div class="item">Linha de conteúdo C</div>
+        <div class="item">Linha de conteúdo D</div>
+        <div class="item">Linha de conteúdo E</div>
+        <div class="item">Linha de conteúdo F</div>
+        <div class="item">Linha de conteúdo G</div>
+    </div>
+</body>
+</html>
