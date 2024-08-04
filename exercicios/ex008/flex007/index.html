@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible boxes</title>
+    <style>
+        #container{
+            background-color: black;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .item{
+           background-color: rgb(0, 191, 255);
+           border: 1px solid red;
+           text-align: center;
+           padding: 8px;
+           width: 100px;
+           font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #letter1{
+            order: 4;
+        }
+
+        #letter2{
+            order: 3; 
+        }
+
+        #letter3{
+           order: 2;
+        }
+
+        #letter4{
+           order: 1;
+        }
+
+        #letter5{
+          order: -10;
+        }
+
+        #letter6{
+          order: -100;
+        }
+
+        #letter7{
+           order: 12;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item" id="letter1">A</div>
+        <div class="item" id="letter2">B</div>
+        <div class="item" id="letter3">C</div>
+        <div class="item" id="letter4">D</div>
+        <div class="item" id="letter5">E</div>
+        <div class="item" id="letter6">F</div>
+        <div class="item" id="letter7">G</div>
+    </div>
+</body>
+</html>
