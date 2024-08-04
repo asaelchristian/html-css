@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible boxes</title>
+    <style>
+        #container{
+            background-color: rgb(255, 0, 238);
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+
+        .item{
+           background-color: rgb(0, 255, 238);
+           border: 1px solid red;
+           text-align: center;
+           padding: 5px;
+           font-family: Arial, Helvetica, sans-serif;
+           flex-basis: 150px;
+           align-self: flex-start;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item" id="letter1">A</div>
+        <div class="item" id="letter2">B</div>
+        <div class="item" id="letter3">C</div>
+        <div class="item" id="letter4">D</div>
+        <div class="item" id="letter5">E</div>
+        <div class="item" id="letter6">F</div>
+        <div class="item" id="letter7">G</div>
+    </div>
+</body>
+</html>
