@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible boxes</title>
+    <style>
+        #container{
+            background-color: rgba(0, 0, 0, 0.686);
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item{
+           background-color: rgb(0, 191, 255);
+           border: 1px solid red;
+           text-align: center;
+           padding: 8px;
+           font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #boxA{
+           flex: 10%;
+        }
+
+        #boxB{
+          flex: 30%;
+        }
+
+        #boxC{
+          flex: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item" id="boxA">Menu</div>
+        <div class="item" id="boxB">Notícias do Brasil e do Mundo</div>
+        <div class="item" id="boxC">Anúncios</div>
+    </div>
+</body>
+</html>
