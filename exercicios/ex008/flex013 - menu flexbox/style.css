@@ -22,13 +22,16 @@ header{
     align-items: center;
 }
 
+#menu, #x{
+    display: none;
+}
+
 h1{
     text-align: center;
-    border: 2px dashed black;
     flex: 0 0 200px;
 }
 
-nav{
+#options{
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -51,32 +54,19 @@ a:hover{
     transition-duration: 0.2s;
 }
 
-@media screen and (min-width: 660px){
-    
+@media screen and (max-width: 630px){
+    header, #options{
+        flex-flow: column nowrap;
+    }
+
+    h1{
+        flex-basis: 40px;
+    }
+
+    #options{
+        width: 90vw;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 main{
     background-color: white;
