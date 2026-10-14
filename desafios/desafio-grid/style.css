@@ -9,7 +9,7 @@ header{
     padding: 20px;
     text-align: center;
 }
-nav{
+.nav{
     background-color: rgb(212, 162, 101);
     display: flex;
     padding: 10px;
