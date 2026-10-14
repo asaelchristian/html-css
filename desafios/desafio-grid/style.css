@@ -29,22 +29,35 @@ header{
     transition-duration: 0.7s;
     cursor: pointer;
 }
-.grid-container{
+.grid-container {
+    width: 90%;
+    max-width: 90%;
+    margin: 50px auto; 
     display: grid;
-    grid-template: repeat(1, 1fr) / repeat(10, 1fr);
-    gap: 10px;
+    gap: 20px; 
+}
+p{
+    text-align: justify;
+    line-height: 1.4em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.secH{
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 img{
     max-width: 100%;
     height: auto;
     width: 100%;
 }
-aside{
-    grid-column: 8 / 11;
-}
-main{
-    grid-column: 1 / 8;
-}
+
+/*Why doesn't the flexbox work here?*/
 footer{
-    grid-column: 1 / 11;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    height: 200px;
 }
