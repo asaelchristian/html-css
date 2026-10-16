@@ -51,8 +51,6 @@ img{
     height: auto;
     width: 100%;
 }
-
-/*Why doesn't the flexbox work here?*/
 footer{
     display: flex;
     flex-flow: row wrap;
@@ -60,4 +58,12 @@ footer{
     color: white;
     font-weight: bold;
     height: 200px;
+    justify-content: center;
+}
+.navigation-footer{
+    margin: 10px;
+}
+
+@media screen {
+    
 }
